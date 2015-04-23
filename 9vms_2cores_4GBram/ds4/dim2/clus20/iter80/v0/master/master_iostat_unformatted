@@ -1,62 +1,62 @@
 Linux 3.11.10-301.fc20.x86_64 (master.novalocal) 	04/22/2015 	_x86_64_	(4 CPU)
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              19.42         1.03        92.10     386462   34461776
+vda              19.66         1.01        93.62     388922   36092016
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              26.80         0.80       115.20          4        576
+vda               0.00         0.00         0.00          0          0
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               0.40         0.00        53.60          0        268
+vda              65.80         0.00       306.40          0       1532
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               0.40         0.00         7.20          0         36
+vda              21.20         0.00        95.20          0        476
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              23.15         0.00       146.11          0        732
+vda               0.40         0.00         6.40          0         32
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              13.20         0.00       134.40          0        672
+vda              10.20         0.00        40.80          0        204
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              51.80         0.00       218.40          0       1092
+vda              65.80         0.00       298.40          0       1492
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              59.40         0.00       298.40          0       1492
+vda              19.80         0.00        92.80          0        464
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              46.20         0.00       188.80          0        944
+vda              17.20         0.00       131.20          0        656
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              57.40         0.00       284.00          0       1420
+vda              56.80         0.00       280.80          0       1404
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               5.80         0.00        84.80          0        424
+vda               0.60         0.00        48.80          0        244
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               2.60         0.00        55.20          0        276
+vda              41.40         0.00       240.80          0       1204
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               9.00         0.00        36.00          0        180
+vda              14.40         0.00        71.20          0        356
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               9.40         0.80        78.40          4        392
+vda               6.60         0.80        26.40          4        132
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              22.40         0.00       120.00          0        600
+vda              27.40         0.80       121.60          4        608
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              45.20         0.00       190.40          0        952
+vda              48.40         0.00       379.20          0       1896
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              39.80         0.00       426.40          0       2132
+vda              27.60         0.00       176.80          0        884
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              67.60         0.00       279.20          0       1396
+vda              19.80         0.00        90.40          0        452
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda              51.20         0.00       225.60          0       1128
+vda              44.80         0.00       216.00          0       1080
 
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
-vda               0.20         0.00         0.80          0          4
+vda               0.60         0.00        12.80          0         64
 
