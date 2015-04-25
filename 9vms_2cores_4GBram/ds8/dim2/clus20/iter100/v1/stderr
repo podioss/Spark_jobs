@@ -1,0 +1,10 @@
+Spark assembly has been built with Hive, including Datanucleus jars on classpath
+15/04/25 01:21:58 WARN AppClient$ClientActor: Could not connect to akka.tcp://sparkMaster@192.168.5.142:7077: akka.remote.InvalidAssociation: Invalid address: akka.tcp://sparkMaster@192.168.5.142:7077
+15/04/25 01:21:58 WARN Remoting: Tried to associate with unreachable remote address [akka.tcp://sparkMaster@192.168.5.142:7077]. Address is now gated for 5000 ms, all messages to this address will be delivered to dead letters. Reason: Connection refused: /192.168.5.142:7077
+15/04/25 01:22:18 WARN Remoting: Tried to associate with unreachable remote address [akka.tcp://sparkMaster@192.168.5.142:7077]. Address is now gated for 5000 ms, all messages to this address will be delivered to dead letters. Reason: Connection refused: /192.168.5.142:7077
+15/04/25 01:22:18 WARN AppClient$ClientActor: Could not connect to akka.tcp://sparkMaster@192.168.5.142:7077: akka.remote.InvalidAssociation: Invalid address: akka.tcp://sparkMaster@192.168.5.142:7077
+15/04/25 01:22:38 WARN AppClient$ClientActor: Could not connect to akka.tcp://sparkMaster@192.168.5.142:7077: akka.remote.InvalidAssociation: Invalid address: akka.tcp://sparkMaster@192.168.5.142:7077
+15/04/25 01:22:38 WARN Remoting: Tried to associate with unreachable remote address [akka.tcp://sparkMaster@192.168.5.142:7077]. Address is now gated for 5000 ms, all messages to this address will be delivered to dead letters. Reason: Connection refused: /192.168.5.142:7077
+15/04/25 01:22:58 WARN SparkDeploySchedulerBackend: Application ID is not initialized yet.
+15/04/25 01:22:58 ERROR SparkDeploySchedulerBackend: Application has been killed. Reason: All masters are unresponsive! Giving up.
+15/04/25 01:22:58 ERROR TaskSchedulerImpl: Exiting due to error from cluster scheduler: All masters are unresponsive! Giving up.
