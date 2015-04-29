@@ -1,0 +1,330 @@
+Spark assembly has been built with Hive, including Datanucleus jars on classpath
+15/04/28 13:06:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/28 13:06:54 WARN LoadSnappy: Snappy native library not loaded
+[Stage 0:>                                                        (0 + 0) / 304][Stage 0:>                                                        (0 + 4) / 304][Stage 0:>                                                        (0 + 6) / 304][Stage 0:>                                                        (0 + 8) / 304][Stage 0:>                                                       (0 + 10) / 304][Stage 0:>                                                       (0 + 12) / 304][Stage 0:>                                                       (0 + 14) / 304][Stage 0:>                                                       (0 + 16) / 304][Stage 0:>                                                       (0 + 16) / 304][Stage 0:>                                                       (1 + 16) / 304][Stage 0:>                                                       (2 + 16) / 304][Stage 0:=>                                                      (6 + 16) / 304][Stage 0:=>                                                      (8 + 16) / 304][Stage 0:===>                                                   (20 + 16) / 304][Stage 0:===>                                                   (21 + 16) / 304][Stage 0:===>                                                   (21 + 17) / 304][Stage 0:===>                                                   (22 + 16) / 304][Stage 0:====>                                                  (23 + 16) / 304][Stage 0:====>                                                  (26 + 16) / 304][Stage 0:====>                                                  (27 + 16) / 304][Stage 0:=====>                                                 (28 + 16) / 304][Stage 0:=====>                                                 (29 + 16) / 304][Stage 0:=====>                                                 (30 + 16) / 304][Stage 0:=====>                                                 (31 + 16) / 304][Stage 0:=====>                                                 (32 + 16) / 304][Stage 0:=====>                                                 (33 + 16) / 304][Stage 0:======>                                                (35 + 16) / 304][Stage 0:=======>                                               (41 + 16) / 304][Stage 0:=======>                                               (42 + 16) / 304][Stage 0:=======>                                               (43 + 16) / 304][Stage 0:========>                                              (47 + 16) / 304][Stage 0:========>                                              (49 + 16) / 304][Stage 0:============>                                          (67 + 16) / 304][Stage 0:============>                                          (70 + 16) / 304][Stage 0:============>                                          (71 + 16) / 304][Stage 0:=============>                                         (72 + 16) / 304][Stage 0:=============>                                         (73 + 16) / 304][Stage 0:=============>                                         (74 + 16) / 304][Stage 0:=============>                                         (75 + 16) / 304][Stage 0:=============>                                         (76 + 16) / 304][Stage 0:=============>                                         (77 + 16) / 304][Stage 0:==============>                                        (78 + 16) / 304][Stage 0:===============>                                       (85 + 16) / 304][Stage 0:===============>                                       (86 + 16) / 304][Stage 0:===============>                                       (87 + 16) / 304][Stage 0:================>                                      (91 + 16) / 304][Stage 0:================>                                      (92 + 16) / 304][Stage 0:================>                                      (93 + 16) / 304][Stage 0:=================>                                     (94 + 16) / 304][Stage 0:=================>                                     (95 + 16) / 304][Stage 0:=================>                                     (96 + 16) / 304][Stage 0:===================>                                  (107 + 16) / 304][Stage 0:===================>                                  (108 + 16) / 304][Stage 0:===================>                                  (109 + 16) / 304][Stage 0:===================>                                  (110 + 16) / 304][Stage 0:===================>                                  (111 + 16) / 304][Stage 0:===================>                                  (112 + 16) / 304][Stage 0:=====================>                                (119 + 16) / 304][Stage 0:=====================>                                (120 + 16) / 304][Stage 0:=======================>                              (130 + 16) / 304][Stage 0:=======================>                              (131 + 16) / 304][Stage 0:=======================>                              (133 + 16) / 304][Stage 0:=======================>                              (134 + 16) / 304][Stage 0:=======================>                              (135 + 16) / 304][Stage 0:========================>                             (136 + 16) / 304][Stage 0:========================>                             (137 + 16) / 304][Stage 0:==========================>                           (147 + 16) / 304][Stage 0:==========================>                           (148 + 16) / 304][Stage 0:==========================>                           (151 + 16) / 304][Stage 0:===========================>                          (152 + 16) / 304][Stage 0:===========================>                          (153 + 16) / 304][Stage 0:===========================>                          (155 + 16) / 304][Stage 0:===========================>                          (156 + 16) / 304][Stage 0:===========================>                          (157 + 16) / 304][Stage 0:============================>                         (158 + 16) / 304][Stage 0:============================>                         (161 + 16) / 304][Stage 0:============================>                         (162 + 16) / 304][Stage 0:============================>                         (163 + 16) / 304][Stage 0:=============================>                        (164 + 16) / 304][Stage 0:=============================>                        (165 + 16) / 304][Stage 0:=============================>                        (166 + 16) / 304][Stage 0:=============================>                        (167 + 16) / 304][Stage 0:=============================>                        (168 + 16) / 304][Stage 0:==============================>                       (169 + 16) / 304][Stage 0:==============================>                       (170 + 16) / 304][Stage 0:==============================>                       (172 + 16) / 304][Stage 0:==============================>                       (173 + 16) / 304][Stage 0:==============================>                       (174 + 16) / 304][Stage 0:===============================>                      (175 + 16) / 304][Stage 0:===============================>                      (176 + 16) / 304][Stage 0:===============================>                      (177 + 16) / 304][Stage 0:===============================>                      (178 + 16) / 304][Stage 0:===============================>                      (179 + 16) / 304][Stage 0:===============================>                      (180 + 16) / 304][Stage 0:================================>                     (181 + 16) / 304][Stage 0:================================>                     (182 + 16) / 304][Stage 0:================================>                     (183 + 16) / 304][Stage 0:================================>                     (184 + 16) / 304][Stage 0:=================================>                    (188 + 16) / 304][Stage 0:=================================>                    (190 + 16) / 304][Stage 0:==================================>                   (192 + 16) / 304][Stage 0:==================================>                   (196 + 16) / 304][Stage 0:===================================>                  (200 + 16) / 304][Stage 0:===================================>                  (201 + 16) / 304][Stage 0:=====================================>                (213 + 16) / 304][Stage 0:======================================>               (214 + 16) / 304][Stage 0:======================================>               (215 + 16) / 304][Stage 0:======================================>               (216 + 16) / 304][Stage 0:======================================>               (217 + 16) / 304][Stage 0:======================================>               (218 + 16) / 304][Stage 0:======================================>               (219 + 16) / 304][Stage 0:=======================================>              (220 + 16) / 304][Stage 0:=======================================>              (223 + 16) / 304][Stage 0:=======================================>              (224 + 16) / 304][Stage 0:=======================================>              (225 + 16) / 304][Stage 0:========================================>             (226 + 16) / 304][Stage 0:============================================>         (251 + 16) / 304]15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 7 on worker8: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 197.0 in stage 0.0 (TID 238, worker8): ExecutorLostFailure (executor 7 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 198.0 in stage 0.0 (TID 240, worker8): ExecutorLostFailure (executor 7 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 6 on worker2: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 213.0 in stage 0.0 (TID 262, worker2): ExecutorLostFailure (executor 6 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 190.0 in stage 0.0 (TID 222, worker2): ExecutorLostFailure (executor 6 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 5 on worker4: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 207.0 in stage 0.0 (TID 257, worker4): ExecutorLostFailure (executor 5 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 195.0 in stage 0.0 (TID 242, worker4): ExecutorLostFailure (executor 5 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 4 on worker3: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 203.0 in stage 0.0 (TID 254, worker3): ExecutorLostFailure (executor 4 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 202.0 in stage 0.0 (TID 250, worker3): ExecutorLostFailure (executor 4 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 3 on worker7: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 286.0 in stage 0.0 (TID 265, worker7): ExecutorLostFailure (executor 3 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 283.0 in stage 0.0 (TID 264, worker7): ExecutorLostFailure (executor 3 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 2 on worker6: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 239.0 in stage 0.0 (TID 241, worker6): ExecutorLostFailure (executor 2 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 249.0 in stage 0.0 (TID 266, worker6): ExecutorLostFailure (executor 2 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 1 on worker5: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 199.0 in stage 0.0 (TID 244, worker5): ExecutorLostFailure (executor 1 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 196.0 in stage 0.0 (TID 243, worker5): ExecutorLostFailure (executor 1 lost)
+15/04/28 13:36:51 ERROR TaskSchedulerImpl: Lost executor 0 on worker1: worker lost
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 211.0 in stage 0.0 (TID 245, worker1): ExecutorLostFailure (executor 0 lost)
+15/04/28 13:36:51 WARN TaskSetManager: Lost task 221.0 in stage 0.0 (TID 253, worker1): ExecutorLostFailure (executor 0 lost)
+[Stage 0:=============================================>         (251 + 0) / 304]15/04/28 13:36:53 WARN SparkDeploySchedulerBackend: Ignored task status update (264 state FINISHED) from unknown executor $sender with ID $executorId
+[Stage 0:============================================>         (252 + -1) / 304]15/04/28 13:37:18 WARN SparkDeploySchedulerBackend: Ignored task status update (222 state FINISHED) from unknown executor $sender with ID $executorId
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 11
+15/04/28 13:37:26 WARN SparkDeploySchedulerBackend: Ignored task status update (265 state FINISHED) from unknown executor $sender with ID $executorId
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 10
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 15
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 17
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 16
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 18
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 19
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 21
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 20
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 23
+15/04/28 13:37:26 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 22
+[Stage 0:=============================================>        (254 + -3) / 304]15/04/28 13:37:32 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 12
+15/04/28 13:37:35 WARN SparkDeploySchedulerBackend: Ignored task status update (240 state FINISHED) from unknown executor $sender with ID $executorId
+[Stage 0:=============================================>        (255 + -4) / 304]15/04/28 13:37:38 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 9
+15/04/28 13:37:43 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 24
+15/04/28 13:38:48 WARN SparkDeploySchedulerBackend: Ignored task status update (238 state FINISHED) from unknown executor $sender with ID $executorId
+[Stage 0:=============================================>        (255 + -4) / 304][Stage 0:=============================================>        (256 + -5) / 304]15/04/28 13:38:13 ERROR OneForOneStrategy: Error notifying standalone scheduler's driver actor
+org.apache.spark.SparkException: Error notifying standalone scheduler's driver actor
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:281)
+	at org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend.executorRemoved(SparkDeploySchedulerBackend.scala:125)
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:145)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.concurrent.TimeoutException: Futures timed out after [30 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:219)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:153)
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:86)
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:86)
+	at akka.dispatch.MonitorableThreadFactory$AkkaForkJoinWorkerThread$$anon$3.block(ThreadPoolBuilder.scala:169)
+	at scala.concurrent.forkjoin.ForkJoinPool.managedBlock(ForkJoinPool.java:3640)
+	at akka.dispatch.MonitorableThreadFactory$AkkaForkJoinWorkerThread.blockOn(ThreadPoolBuilder.scala:167)
+	at scala.concurrent.Await$.ready(package.scala:86)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:278)
+	... 20 more
+15/04/28 13:37:51 WARN BlockManagerMasterActor: Removing BlockManager BlockManagerId(1, worker5, 42439) with no recent heart beats: 54911ms exceeds 45000ms
+15/04/28 13:38:59 WARN BlockManagerMasterActor: Removing BlockManager BlockManagerId(4, worker3, 40171) with no recent heart beats: 72461ms exceeds 45000ms
+15/04/28 13:38:59 WARN BlockManagerMasterActor: Removing BlockManager BlockManagerId(6, worker2, 52679) with no recent heart beats: 71751ms exceeds 45000ms
+15/04/28 13:38:59 WARN BlockManagerMasterActor: Removing BlockManager BlockManagerId(7, worker8, 60989) with no recent heart beats: 68744ms exceeds 45000ms
+15/04/28 13:38:59 WARN BlockManagerMasterActor: Removing BlockManager BlockManagerId(3, worker7, 50853) with no recent heart beats: 72976ms exceeds 45000ms
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR OneForOneStrategy: Error notifying standalone scheduler's driver actor
+org.apache.spark.SparkException: Error notifying standalone scheduler's driver actor
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:281)
+	at org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend.executorRemoved(SparkDeploySchedulerBackend.scala:125)
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:145)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.concurrent.TimeoutException: Futures timed out after [30 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:219)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:153)
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:86)
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:86)
+	at akka.dispatch.MonitorableThreadFactory$AkkaForkJoinWorkerThread$$anon$3.block(ThreadPoolBuilder.scala:169)
+	at scala.concurrent.forkjoin.ForkJoinPool.managedBlock(ForkJoinPool.java:3640)
+	at akka.dispatch.MonitorableThreadFactory$AkkaForkJoinWorkerThread.blockOn(ThreadPoolBuilder.scala:167)
+	at scala.concurrent.Await$.ready(package.scala:86)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:278)
+	... 20 more
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 28
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 27
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 30
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 29
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 31
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 33
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 34
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 32
+15/04/28 13:38:59 ERROR OneForOneStrategy: 
+java.lang.NullPointerException
+	at org.apache.spark.deploy.client.AppClient$ClientActor$$anonfun$receiveWithLogging$1.applyOrElse(AppClient.scala:137)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:53)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.deploy.client.AppClient$ClientActor.aroundReceive(AppClient.scala:59)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 35
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 37
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 36
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 25
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 38
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 40
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 41
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 39
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 44
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 45
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 42
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 26
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Asked to remove non-existent executor 8
+15/04/28 13:38:59 ERROR SparkDeploySchedulerBackend: Application has been killed. Reason: Master removed our application: FAILED
