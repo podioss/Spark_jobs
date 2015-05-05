@@ -1,0 +1,25 @@
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias spark='cd /opt/spark-1.2.0/'
+alias hadooph='cd /opt/hadoop-1.2.1' 
+alias test_workers='for i in 1 2 3 4 5 6 7 8; do ssh worker$i tail -1 /opt/spark-1.2.0/logs/spark-root-org.apache.spark.deploy.worker.Worker-1-worker$i.novalocal.out; done'
+alias bell='echo -ne "\007"'
+alias mahouth='cd /opt/mahout-0.10/mahout-distribution-0.10.0/'
+function start_gmonds {
+	for i in {1..8}
+	do
+		ssh worker${i} "systemctl start gmond; systemctl status gmond | grep -i active"
+	done
+	return
+}
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.71-2.5.3.3.fc20.x86_64/jre
+export HADOOP_PREFIX=/opt/hadoop-1.2.1/
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
