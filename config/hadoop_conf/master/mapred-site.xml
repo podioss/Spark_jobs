@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+	<property>
+		<name>mapred.job.tracker</name>
+		<value>master:9001</value>
+	</property>
+
+
+	<property>
+		<name>mapred.map.child.java.opts</name>
+		<value>-Xmx2g</value>
+	</property>
+
+
+	<property>
+		<name>mapred.reduce.child.java.opts</name>
+		<value>-Xmx2g</value>
+	</property>
+
+
+	<property>
+		<name>mapred.local.dir</name>
+		<value>/opt/tmp_dir</value>
+	</property>
+
+
+	<property>
+		<name>mapred.jobtracker.taskScheduler</name>
+		<value>org.apache.hadoop.mapred.FairScheduler</value>
+	</property>
+
+</configuration>
