@@ -15,12 +15,16 @@ RRDS_W6="${RRDS}/worker6"
 RRDS_W7="${RRDS}/worker7"
 RRDS_W8="${RRDS}/worker8"
 MASTER_METRICS=(bytes_in.rrd bytes_out.rrd mem_buffers.rrd mem_cached.rrd mem_free.rrd cpu_idle.rrd cpu_system.rrd cpu_steal.rrd cpu_user.rrd cpu_wio.rrd)
-WORKER_METRICS=(disk_reads.rrd disk_writes.rrd bytes_in.rrd bytes_out.rrd mem_buffers.rrd mem_cached.rrd mem_free.rrd cpu_idle.rrd cpu_system.rrd cpu_steal.rrd cpu_user.rrd cpu_wio.rrd)
-RES_DIR="/opt/Spark_jobs/9vms_2cores_4GBram/ds6/dim1000" #the directory of the jobs for 10.000 data points
-SPARK_HOME="/opt/spark-1.2.0"
+WORKER_METRICS=(bytes_in.rrd bytes_out.rrd mem_buffers.rrd mem_cached.rrd mem_free.rrd cpu_idle.rrd cpu_system.rrd cpu_steal.rrd cpu_user.rrd cpu_wio.rrd)
+
+
+DIM=$1  #get the dimensions as the first argument passed to the script
+CHUNKS=$2  #number of partitions for the input file of spark job
+RES_DIR="/opt/Spark_jobs/9vms_2cores_4GBram/ds5/dim${DIM}" #the directory of the jobs for 10.000 data points
+SPARK_HOME="/opt/spark-1.2.0-bin-hadoop2.4"
 SPARK_SUBMIT="${SPARK_HOME}/bin/spark-submit"
 APP_DIR="${SPARK_HOME}/apps"
-HDFS_DIR="/kmeans/n1000000/d1000/n6d1000"
+HDFS_DIR="/kmeans/n5/d${DIM}/n5d${DIM}"
 
 SPARK_KMEANS="$APP_DIR/sparktest.py"
 
@@ -43,26 +47,26 @@ function makedirs {
 
 function start_iostats {
     #start iostat over ssh to all nodes in the cluster
-    for i in {1..8}
+    for w in {1..8}
     do
-        ssh worker${i} "nohup iostat -dm 5 >/tmp/iostat_unformatted &"
+        ssh worker${w} "nohup iostat -dm 5 >/root/iostat_unformatted &"
     done
     return
 }
 
 function stop_iostats {
-    for i in {1..8}
+    for si in {1..8}
     do
-        ssh worker${i} "pkill -f iostat"
+        ssh worker${si} "pkill -f iostat"
     done
     return
 }
 
 function fetch_iostats {
-    for i in {1..8}
+    for f in {1..8}
     do
-        scp worker${i}:/root/iostat_unformatted $JOB_DIR/worker${i}/
-        sed -n '7~3p' $JOB_DIR/worker${i}/iostat_unformatted | tr -s ' ' ',' >$JOB_DIR/worker${i}/iostat_csv
+        scp worker${f}:/root/iostat_unformatted $JOB_DIR/worker${f}/
+        sed -n '7~3p' $JOB_DIR/worker${f}/iostat_unformatted | tr -s ' ' ',' >$JOB_DIR/worker${f}/iostat_csv
     done
     return
         
@@ -117,56 +121,59 @@ do
 	for v in 0 #1
 	do
 	    #loop over the different clusters
-	    for c in 10 #10 15 20
+	    for c in 10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600
 	    do
-            JOB_DIR="${RES_DIR}/clus${c}/iter${i}/v${v}"  #keep the directory of the current job in a variable
+            JOB_DIR="${RES_DIR}/clus${c}/iter${i}"  #keep the directory of the current job in a variable
             echo -e "\t\tSTART OF SCRIPT OUTPUT No$((COUNTER++))" >$APP_DIR/script_output
             makefiles
             makedirs
             echo "[+] Created the files and directories for the job" >>$APP_DIR/script_output
-	        [ -e "$JOB_DIR/master/master_iostat_unformatted" ] || touch $JOB_DIR/master/master_iostat_unformatted  #the file with the iostat statistics for the master node only
-	        echo "[+] Created the master_iostat_unformatted file" >>$APP_DIR/script_output
-	        echo "[+] Launching master iostat job in the background..." >>$APP_DIR/script_output
-	        iostat -dm 5 >$JOB_DIR/master/master_iostat_unformatted &
-	        IOSTAT_PID=$! #saving the pid of the iostat process
-	        echo "[+] Launching iostat processes on all nodes remotely.." >>$APP_DIR/script_output
-	        start_iostats
-	        echo "[+] Iostat processes just started.." >>$APP_DIR/script_output
-	        GANGLIA_EVENT_START=`date +%s` #event start timestamp
-	        sleep 30 # give some time to iostat to collect the first metrics
-	        JOB_NAME="Rand_ds6_d1000_c${c}_i${i}_v${v}"  # the name of the job about to run
-	        #JOB_NAME="full_run_test"
-	        echo "[+] Submitting job to spark..." >>$APP_DIR/script_output
+	    [ -e "$JOB_DIR/master/master_iostat_unformatted" ] || touch $JOB_DIR/master/master_iostat_unformatted  #the file with the iostat statistics for the master node only
+	    echo "[+] Created the master_iostat_unformatted file" >>$APP_DIR/script_output
+	    echo "[+] Launching master iostat job in the background..." >>$APP_DIR/script_output
+	    iostat -dm 5 >$JOB_DIR/master/master_iostat_unformatted &
+	    IOSTAT_PID=$! #saving the pid of the iostat process
+	    echo "[+] Launching iostat processes on all nodes remotely.." >>$APP_DIR/script_output
+	    start_iostats
+	    echo "[+] Iostat processes just started.." >>$APP_DIR/script_output
+	    echo "[+] Sleeping for 30 secs..." >>$APP_DIR/script_output
+	    GANGLIA_EVENT_START=`date +%s` #event start timestamp
+	    sleep 30 # give some time to iostat to collect the first metrics
+	    JOB_NAME="Spark_n5_d${DIM}_c${c}_i${i}"  # the name of the job about to run
+	    #JOB_NAME="full_run_test"
+	    echo "[+] Submitting job to spark..." >>$APP_DIR/script_output
 	        
-	        $SPARK_SUBMIT --conf spark.executor.memory=2g $SPARK_KMEANS $JOB_NAME $HDFS_DIR $i $c >$JOB_DIR/stdout 2>$JOB_DIR/stderr &
-	        SPARK_SUBMIT_PID=$! #saving the pid of spark submit script running in the background
-	        # wait until the spark spits the first stderr line in the file
-	        while [ "`wc -l $JOB_DIR/stderr`" = "0 $JOB_DIR/stderr" ]; do
-	            continue
-	        done
-	        JOB_START_TIME=`date +%s` #current job start timestamp
+	    $SPARK_SUBMIT --conf spark.executor.memory=2700m $SPARK_KMEANS $JOB_NAME $HDFS_DIR $i $c $CHUNKS >$JOB_DIR/stdout 2>$JOB_DIR/stderr &
+	    SPARK_SUBMIT_PID=$! #saving the pid of spark submit script running in the background
+	    # wait until the spark spits the first stderr line in the file
+	    while [ "`wc -l $JOB_DIR/stderr`" = "0 $JOB_DIR/stderr" ]; do
+	        continue
+	    done
+	    JOB_START_TIME=`date +%s` #current job start timestamp
 	        
-	        wait $SPARK_SUBMIT_PID  #now wait for the job to complete
-	        JOB_END_TIME=`date +%s` #current job stop timestamp
-	        echo "[+] Job: $JOB_NAME just ended" >>$APP_DIR/script_output
-	        sleep 45
-	        GANGLIA_EVENT_STOP=`date +%s` #event stop timestamp
-	        echo "[+] Killing master iostat process..." >>$APP_DIR/script_output
-	        kill -SIGTERM $IOSTAT_PID
-	        echo "[+] Killing iostat processes on all workers.." >>$APP_DIR/script_output
-	        stop_iostats
-	        echo "[+] Reporting time statistics for the job" >>$APP_DIR/script_output
-	        report_time #report time stats for the job p in the appropriate file
-	        echo "[+] Placing an event to ganglia" >>$APP_DIR/script_output
-	        place_event
+	    wait $SPARK_SUBMIT_PID  #now wait for the job to complete
+	    JOB_END_TIME=`date +%s` #current job stop timestamp
+	    echo "[+] Job: $JOB_NAME just ended" >>$APP_DIR/script_output
+	    echo "[+] Sleeping for 45 secs..." >>$APP_DIR/script_output
+	    sleep 45
+	    GANGLIA_EVENT_STOP=`date +%s` #event stop timestamp
+	    echo "[+] Killing master iostat process..." >>$APP_DIR/script_output
+	    kill -SIGTERM $IOSTAT_PID
+	    echo "[+] Killing iostat processes on all workers.." >>$APP_DIR/script_output
+	    stop_iostats
+	    echo "[+] Reporting time statistics for the job" >>$APP_DIR/script_output
+	    report_time #report time stats for the job p in the appropriate file
+	    echo "[+] Placing an event to ganglia" >>$APP_DIR/script_output
+	    place_event
 	        
-	        echo "[+] Starting to gather all the metrics and formatting the iostat outputs for all nodes..." >>$APP_DIR/script_output
-	        sed -n '7~3p' $JOB_DIR/master/master_iostat_unformatted | tr -s ' ' ',' >$JOB_DIR/master/master_iostat_csv
-	        fetch_iostats
-	        gather_metrics
-	        echo "[+] Metrics from ganglia for all nodes where gathered" >>$APP_DIR/script_output
-	        echo "[+] Half minute pause before continuing with the next job..." >>$APP_DIR/script_output
-	        sleep 30
+	    echo "[+] Starting to gather all the metrics and formatting the iostat outputs for all nodes..." >>$APP_DIR/script_output
+	    sed -n '7~3p' $JOB_DIR/master/master_iostat_unformatted | tr -s ' ' ',' >$JOB_DIR/master/master_iostat_csv
+	    fetch_iostats
+	    gather_metrics
+	    echo "[+] Metrics from ganglia for all nodes where gathered" >>$APP_DIR/script_output
+	    echo "[+] Half minute pause before continuing with the next job..." >>$APP_DIR/script_output
+	    echo "[+] All ok" >>$APP_DIR/script_output
+	    sleep 30
 	    done #end of cluster iterations
 	done #end of version iterations
 done #end of iter iterations

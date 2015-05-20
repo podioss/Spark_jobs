@@ -1,0 +1,43 @@
+Spark assembly has been built with Hive, including Datanucleus jars on classpath
+15/05/19 22:55:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                         (0 + 0) / 16][Stage 0:>                                                         (0 + 8) / 16][Stage 0:>                                                        (0 + 12) / 16][Stage 0:>                                                        (0 + 16) / 16][Stage 0:===>                                                     (1 + 15) / 16][Stage 0:=======>                                                 (2 + 14) / 16][Stage 0:=========================>                                (7 + 9) / 16][Stage 0:==========================================>              (12 + 4) / 16]                                                                                [Stage 2:>                                                        (0 + 16) / 16][Stage 2:=============================>                            (8 + 8) / 16][Stage 2:=================================================>       (14 + 2) / 16]                                                                                15/05/19 22:55:30 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+15/05/19 22:55:30 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+[Stage 4:=================================================>       (14 + 2) / 16]                                                                                15/05/19 22:55:39 ERROR ContextCleaner: Error cleaning RDD 4
+akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka.tcp://sparkExecutor@worker3:40253/user/BlockManagerActor1#1349272521]] after [30000 ms]
+	at akka.pattern.PromiseActorRef$$anonfun$1.apply$mcV$sp(AskSupport.scala:333)
+	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+15/05/19 22:55:39 WARN BlockManagerMaster: Failed to remove RDD 4 - Ask timed out on [Actor[akka.tcp://sparkExecutor@worker3:40253/user/BlockManagerActor1#1349272521]] after [30000 ms]}
