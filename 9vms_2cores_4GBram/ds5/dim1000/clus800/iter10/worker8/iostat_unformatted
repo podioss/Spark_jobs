@@ -1,94 +1,100 @@
-Linux 3.19.5-200.fc21.x86_64 (worker8) 	05/20/2015 	_x86_64_	(2 CPU)
+Linux 3.19.5-200.fc21.x86_64 (worker8) 	05/21/2015 	_x86_64_	(2 CPU)
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.15         0.03         0.07       1653       4136
+vda              17.56         0.38         0.10      16176       4197
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.20         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.80         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              19.00         0.00         0.09          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.80         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.20         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.20         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              11.80         0.00         0.05          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.00         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.20         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               4.80         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.20         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               6.39         0.00         0.03          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.00         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.60         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.40         0.00         0.05          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.20         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.40         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.00         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.60         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               4.00         0.00         0.03          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.80         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              13.40         0.00         0.06          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.40         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.60         0.00         0.01          0          0
+vda               0.40         0.00         0.00          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               2.00         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               7.00         0.00         1.90          0          9
+vda               0.60         0.00         0.00          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              12.00         0.00         0.96          0          4
+vda               0.00         0.00         0.00          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               4.00         0.00         0.02          0          0
+vda              30.80         0.34         0.01          1          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.40         0.00         0.01          0          0
+vda               2.20         0.00         0.01          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              26.60         0.00         0.12          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda             324.20         4.02         0.01         20          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda             233.60         2.66         0.00         13          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda             300.80         4.08         0.02         20          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              32.40         5.17         0.01         25          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              48.20        13.43         0.02         67          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               5.40         2.03         0.00         10          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              12.80         2.04         0.04         10          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              10.40         2.81         0.02         14          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              12.20         3.63         0.06         18          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               8.40         2.87         0.00         14          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               7.20         2.04         0.01         10          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              10.40         3.21         0.00         16          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               8.40         2.80         0.00         14          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               7.00         2.24         0.00         11          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              15.80         2.24         0.04         11          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              15.00         4.83         0.01         24          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               2.80         0.16         0.01          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               1.20         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               0.80         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda             146.60         1.29         0.05          6          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               2.80         0.00         0.01          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               6.20         0.02         1.87          0          9
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               5.20         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               4.80         0.03         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               3.20         0.00         0.01          0          0
@@ -97,137 +103,128 @@ Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               4.60         0.00         0.02          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.80         0.00         0.01          0          0
+vda               3.00         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               6.80         0.00         0.04          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.00         0.00         1.90          0          9
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              11.60         0.00         0.05          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.60         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.60         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               8.00         0.00         1.93          0          9
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.40         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               9.60         0.00         0.07          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               9.80         0.00         0.04          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.00         0.00         1.91          0          9
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.80         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               4.80         0.00         0.03          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.80         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               4.80         0.00         1.92          0          9
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              10.40         0.00         0.98          0          4
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.60         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.00         0.00         0.00          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.40         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.20         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               9.80         0.00         0.04          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               6.60         0.00         0.03          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.20         0.00         0.04          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.80         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.80         0.00         0.02          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.80         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.00         0.00         0.01          0          0
-
-Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               2.60         0.00         1.90          0          9
+vda              16.20         0.00         5.64          0         28
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               5.40         0.00         0.02          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              19.60         0.00         0.10          0          0
+vda               4.60         0.00         0.02          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.60         0.00         0.02          0          0
+vda               3.00         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               3.80         0.00         1.91          0          9
+vda              10.20         0.00         0.04          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               5.80         0.00         0.02          0          0
+vda               0.40         0.00         0.00          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.40         0.00         0.01          0          0
+vda               4.20         0.00         0.02          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.60         0.00         0.01          0          0
+vda               7.40         0.00         1.94          0          9
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               1.80         0.00         0.01          0          0
+vda               8.40         0.00         0.03          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               7.80         0.00         0.03          0          0
+vda               3.20         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               7.40         0.00         0.04          0          0
+vda               2.40         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.80         0.00         0.00          0          0
+vda               6.00         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               1.20         0.00         0.01          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               5.00         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               9.80         0.00         1.94          0          9
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               3.40         0.00         1.88          0          9
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              11.20         0.00         0.05          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               0.00         0.00         0.00          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              17.20         0.00         0.08          0          0
+vda               2.00         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda               0.80         0.00         0.00          0          0
+vda               6.80         0.00         0.03          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               6.60         0.00         0.03          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               6.80         0.00         0.04          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               5.00         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               0.00         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               3.60         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               4.60         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda              12.00         0.00         0.05          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               0.40         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               6.60         0.00         0.03          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               5.40         0.00         0.02          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               2.40         0.00         0.02          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               1.40         0.00         0.01          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               7.80         0.08         0.03          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               2.80         0.00         0.01          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               0.00         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               6.60         0.00         0.04          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               8.60         0.00         0.04          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
 vda               1.00         0.00         0.00          0          0
 
 Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
-vda              11.40         0.00         0.05          0          0
+vda               0.20         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               0.80         0.00         0.00          0          0
+
+Device:            tps    MB_read/s    MB_wrtn/s    MB_read    MB_wrtn
+vda               2.00         0.00         0.01          0          0
 
