@@ -1,0 +1,40 @@
+#!/bin/bash
+
+function collect {  # 1:FILE 2:METRIC 3:LABEL
+echo "data_points,dimensions,k,$3" > $1
+for ds in 5
+do
+	for dim in 10 50 100 250 500 750 1000 
+	do
+		for clus in 10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600
+		do
+			for iter in 10
+			do
+				tail -1 /opt/Spark_jobs/9vms_2cores_4GBram/ds${ds}/dim${dim}/clus${clus}/iter${iter}/model_data/$2 >> $1
+			done
+		done
+	done
+done
+return
+}
+
+
+
+F1="spark_time_train_data"
+F2="spark_mem_train_data"
+F3="spark_diskioin_train_data"
+F4="spark_diskioout_train_data"
+M1="time_data"
+M2="average_mem_data"
+M3="diskio_in_data"
+M4="diskio_out_data"
+L1="time"
+L2="mem_used_kb"
+L3="diskio_in"
+L4="diskio_out"
+
+collect $F1 $M1 $L1
+collect $F2 $M2 $L2
+collect $F3 $M3 $L3
+collect $F4 $M4 $L4
+
