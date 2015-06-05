@@ -2,11 +2,11 @@
 
 function collect {  # 1:FILE 2:METRIC 3:LABEL
 echo "data_points,dimensions,k,$3" > $1
-for ds in 5
+for ds in $N
 do
-	for dim in 10000 #10 50 100 250 500 750 1000 
+	for dim in 10 50 100 250 500 750 1000 
 	do
-		for clus in 100 1000 #10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600
+		for clus in 10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600
 		do
 			for iter in 10
 			do
@@ -18,12 +18,14 @@ done
 return
 }
 
+FOLDER=$1
+N=$2
+BASE_DIR="$(pwd)""/${FOLDER}"
 
-
-F1="spark_time_train_data"
-F2="spark_mem_train_data"
-F3="spark_diskioin_train_data"
-F4="spark_diskioout_train_data"
+F1="${BASE_DIR}/spark_time_train_data"
+F2="${BASE_DIR}/spark_mem_train_data"
+F3="${BASE_DIR}/spark_diskioin_train_data"
+F4="${BASE_DIR}/spark_diskioout_train_data"
 M1="time_data"
 M2="average_mem_data"
 M3="diskio_in_data"
