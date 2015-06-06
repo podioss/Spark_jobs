@@ -1,0 +1,118 @@
+Spark assembly has been built with Hive, including Datanucleus jars on classpath
+15/06/06 08:05:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                         (0 + 0) / 16][Stage 0:>                                                         (0 + 1) / 16][Stage 0:>                                                         (0 + 2) / 16][Stage 0:>                                                         (0 + 7) / 16][Stage 0:>                                                        (0 + 13) / 16][Stage 0:>                                                        (0 + 16) / 16][Stage 0:===>                                                     (1 + 15) / 16][Stage 0:=======>                                                 (2 + 14) / 16][Stage 0:==========>                                              (3 + 13) / 16][Stage 0:==============>                                          (4 + 12) / 16][Stage 0:=================>                                       (5 + 11) / 16][Stage 0:=============================>                            (8 + 8) / 16][Stage 0:================================>                         (9 + 7) / 16][Stage 0:==========================================>              (12 + 4) / 16][Stage 0:=================================================>       (14 + 2) / 16]                                                                                [Stage 1:=========================================================(16 + 0) / 16]                                                                                [Stage 2:>                                                        (0 + 16) / 16][Stage 2:==============>                                          (4 + 12) / 16][Stage 2:=====================>                                   (6 + 10) / 16][Stage 2:=============================>                            (8 + 8) / 16][Stage 2:===================================>                     (10 + 6) / 16][Stage 2:==========================================>              (12 + 4) / 16][Stage 2:==============================================>          (13 + 3) / 16][Stage 2:=================================================>       (14 + 2) / 16][Stage 2:=====================================================>   (15 + 1) / 16][Stage 3:=======>                                                 (2 + 14) / 16][Stage 3:=========================>                                (7 + 9) / 16][Stage 3:===================================>                     (10 + 6) / 16][Stage 3:==============================================>          (13 + 7) / 16]                                                                                15/06/06 08:06:13 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+15/06/06 08:06:13 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+[Stage 4:>                                                        (0 + 16) / 16][Stage 4:=======>                                                 (2 + 14) / 16][Stage 4:==============>                                          (4 + 12) / 16][Stage 4:=================>                                       (5 + 11) / 16][Stage 4:=====================>                                   (6 + 10) / 16][Stage 4:=============================>                            (8 + 8) / 16][Stage 4:===================================>                     (10 + 6) / 16][Stage 4:=======================================>                 (11 + 5) / 16][Stage 4:==========================================>              (12 + 4) / 16][Stage 4:==============================================>          (13 + 3) / 16][Stage 4:=================================================>       (14 + 2) / 16][Stage 4:=====================================================>   (15 + 1) / 16][Stage 5:================================>                         (9 + 7) / 16]                                                                                [Stage 6:>                                                        (0 + 16) / 16][Stage 6:===>                                                     (1 + 15) / 16][Stage 6:=====================>                                   (6 + 10) / 16][Stage 6:=============================>                            (8 + 8) / 16][Stage 6:================================>                         (9 + 7) / 16][Stage 6:===================================>                     (10 + 6) / 16][Stage 6:=======================================>                 (11 + 5) / 16][Stage 6:==========================================>              (12 + 4) / 16][Stage 6:==========================================>              (12 + 8) / 16][Stage 6:==============================================>          (13 + 7) / 16][Stage 6:=====================================================>   (15 + 5) / 16][Stage 7:==============>                                          (4 + 12) / 16][Stage 7:================================>                         (9 + 7) / 16]                                                                                [Stage 8:>                                                        (0 + 12) / 16][Stage 8:>                                                        (0 + 13) / 16][Stage 8:>                                                        (0 + 14) / 16][Stage 8:=======>                                                 (2 + 13) / 16][Stage 8:==========>                                              (3 + 12) / 16][Stage 8:==============>                                          (4 + 11) / 16][Stage 8:=================>                                       (5 + 10) / 16][Stage 8:=================>                                       (5 + 11) / 16][Stage 8:=====================>                                   (6 + 10) / 16][Stage 8:=========================>                                (7 + 9) / 16][Stage 8:================================>                         (9 + 7) / 16][Stage 8:===================================>                     (10 + 6) / 16][Stage 8:==============================================>          (13 + 3) / 16][Stage 8:=================================================>       (14 + 2) / 16][Stage 8:=====================================================>   (15 + 1) / 16][Stage 9:===================================>                     (10 + 6) / 16][Stage 9:=================================================>       (14 + 2) / 16]                                                                                [Stage 10:>                                                       (0 + 16) / 16][Stage 10:=======>                                                (2 + 14) / 16][Stage 10:========================>                                (7 + 9) / 16][Stage 10:============================>                            (8 + 8) / 16][Stage 10:================================>                        (9 + 7) / 16][Stage 10:===================================>                    (10 + 6) / 16][Stage 10:=================================================>      (14 + 2) / 16][Stage 11:======================================>                 (11 + 5) / 16][Stage 11:====================================================>   (15 + 1) / 16]                                                                                [Stage 12:>                                                       (0 + 16) / 16][Stage 12:==============>                                         (4 + 12) / 16][Stage 12:========================>                                (7 + 9) / 16][Stage 12:============================>                            (8 + 8) / 16][Stage 12:===================================>                    (10 + 6) / 16][Stage 12:======================================>                 (11 + 5) / 16][Stage 12:==========================================>             (12 + 8) / 16][Stage 12:=============================================>          (13 + 7) / 16][Stage 12:=================================================>      (14 + 6) / 16][Stage 13:=================>                                      (5 + 11) / 16][Stage 13:===================================>                    (10 + 6) / 16]                                                                                [Stage 14:>                                                       (0 + 12) / 16][Stage 14:>                                                       (0 + 13) / 16][Stage 14:>                                                       (0 + 14) / 16][Stage 14:>                                                       (0 + 15) / 16][Stage 14:=======>                                                (2 + 13) / 16][Stage 14:==========>                                             (3 + 12) / 16][Stage 14:==============>                                         (4 + 12) / 16][Stage 14:=================>                                      (5 + 11) / 16][Stage 14:========================>                                (7 + 9) / 16][Stage 14:===================================>                    (10 + 6) / 16][Stage 14:==========================================>             (12 + 4) / 16][Stage 14:=============================================>          (13 + 3) / 16][Stage 14:=================================================>      (14 + 2) / 16][Stage 14:====================================================>   (15 + 1) / 16][Stage 15:=================>                                      (5 + 11) / 16][Stage 15:===================================>                    (10 + 6) / 16][Stage 15:=================================================>      (14 + 2) / 16][Stage 15:=================================================>      (14 + 4) / 16]                                                                                [Stage 16:>                                                       (0 + 15) / 16][Stage 16:>                                                       (0 + 16) / 16][Stage 16:===>                                                    (1 + 15) / 16][Stage 16:=====================>                                  (6 + 10) / 16][Stage 16:========================>                                (7 + 9) / 16][Stage 16:============================>                            (8 + 8) / 16][Stage 16:======================================>                 (11 + 5) / 16][Stage 16:==========================================>             (12 + 4) / 16][Stage 16:=============================================>          (13 + 3) / 16][Stage 16:=================================================>      (14 + 2) / 16][Stage 16:====================================================>   (15 + 1) / 16][Stage 17:==========>                                             (3 + 13) / 16][Stage 17:=====================>                                  (6 + 10) / 16]                                                                                [Stage 18:>                                                       (0 + 16) / 16][Stage 18:===>                                                    (1 + 15) / 16][Stage 18:========================>                                (7 + 9) / 16][Stage 18:============================>                            (8 + 8) / 16][Stage 18:================================>                        (9 + 7) / 16][Stage 18:======================================>                 (11 + 5) / 16][Stage 18:=============================================>          (13 + 6) / 16][Stage 18:=================================================>      (14 + 5) / 16][Stage 19:=================>                                      (5 + 11) / 16][Stage 19:==========================================>             (12 + 4) / 16]                                                                                [Stage 20:>                                                       (0 + 13) / 16][Stage 20:==========>                                             (3 + 11) / 16][Stage 20:=================>                                       (5 + 9) / 16][Stage 20:=====================>                                   (6 + 8) / 16][Stage 20:========================>                                (7 + 7) / 16][Stage 20:========================>                                (7 + 8) / 16][Stage 20:============================>                            (8 + 7) / 16][Stage 20:================================>                        (9 + 6) / 16][Stage 20:===================================>                    (10 + 5) / 16][Stage 20:===================================>                    (10 + 6) / 16][Stage 20:======================================>                 (11 + 5) / 16][Stage 20:==========================================>             (12 + 4) / 16][Stage 20:=================================================>      (14 + 2) / 16][Stage 20:====================================================>   (15 + 1) / 16][Stage 21:>                                                        (0 + 0) / 16][Stage 21:========================>                                (7 + 9) / 16][Stage 21:==========================================>             (12 + 4) / 16][Stage 21:=================================================>      (14 + 4) / 16]                                                                                15/06/06 08:08:18 WARN TaskSetManager: Lost task 14.1 in stage 21.0 (TID 373, worker2): FetchFailed(BlockManagerId(6, worker4, 45311), shuffleId=9, mapId=0, reduceId=14, message=
+org.apache.spark.shuffle.FetchFailedException: java.io.FileNotFoundException: /tmp/spark-local-20150606080544-796c/39/shuffle_9_0_0.index (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.apache.spark.shuffle.IndexShuffleBlockManager.getBlockData(IndexShuffleBlockManager.scala:109)
+	at org.apache.spark.storage.BlockManager.getBlockData(BlockManager.scala:305)
+	at org.apache.spark.network.netty.NettyBlockRpcServer$$anonfun$2.apply(NettyBlockRpcServer.scala:57)
+	at org.apache.spark.network.netty.NettyBlockRpcServer$$anonfun$2.apply(NettyBlockRpcServer.scala:57)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:108)
+	at org.apache.spark.network.netty.NettyBlockRpcServer.receive(NettyBlockRpcServer.scala:57)
+	at org.apache.spark.network.server.TransportRequestHandler.processRpcRequest(TransportRequestHandler.java:124)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:97)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:91)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:44)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:787)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:130)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at org.apache.spark.shuffle.hash.BlockStoreShuffleFetcher$.org$apache$spark$shuffle$hash$BlockStoreShuffleFetcher$$unpackBlock$1(BlockStoreShuffleFetcher.scala:67)
+	at org.apache.spark.shuffle.hash.BlockStoreShuffleFetcher$$anonfun$3.apply(BlockStoreShuffleFetcher.scala:83)
+	at org.apache.spark.shuffle.hash.BlockStoreShuffleFetcher$$anonfun$3.apply(BlockStoreShuffleFetcher.scala:83)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:32)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:39)
+	at org.apache.spark.Aggregator.combineCombinersByKey(Aggregator.scala:89)
+	at org.apache.spark.shuffle.hash.HashShuffleReader.read(HashShuffleReader.scala:44)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:92)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:263)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:230)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:61)
+	at org.apache.spark.scheduler.Task.run(Task.scala:56)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:196)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: /tmp/spark-local-20150606080544-796c/39/shuffle_9_0_0.index (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.apache.spark.shuffle.IndexShuffleBlockManager.getBlockData(IndexShuffleBlockManager.scala:109)
+	at org.apache.spark.storage.BlockManager.getBlockData(BlockManager.scala:305)
+	at org.apache.spark.network.netty.NettyBlockRpcServer$$anonfun$2.apply(NettyBlockRpcServer.scala:57)
+	at org.apache.spark.network.netty.NettyBlockRpcServer$$anonfun$2.apply(NettyBlockRpcServer.scala:57)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:108)
+	at org.apache.spark.network.netty.NettyBlockRpcServer.receive(NettyBlockRpcServer.scala:57)
+	at org.apache.spark.network.server.TransportRequestHandler.processRpcRequest(TransportRequestHandler.java:124)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:97)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:91)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:44)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:787)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:130)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at org.apache.spark.network.client.TransportResponseHandler.handle(TransportResponseHandler.java:156)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:93)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:44)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:319)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:787)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:130)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	... 1 more
+
+)
