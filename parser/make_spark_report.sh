@@ -101,8 +101,8 @@ do
                 tail -1 $BASE_DIR/time > $PARSED/time
                 parse_diskio
                 #parse_net
-                
-                POINTS=$(echo "10^$ds" | bc)
+                POINTS=$(echo "$ds*1000" | bc)
+                #POINTS=$(echo "10^$ds" | bc)
                 DI=$(paste -sd+ $PARSED/cluster_diskio_in | bc)
                 DO=$(paste -sd+ $PARSED/cluster_diskio_out | bc)
                 M=$(paste -sd+ $PARSED/cluster_mem | bc)
