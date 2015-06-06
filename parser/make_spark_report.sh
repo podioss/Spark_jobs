@@ -83,7 +83,7 @@ function parse_net {
 
 METRICSPARSER="./metricsparser.py"
 MEMPARSER="./memparser.py"
-for ds in 4 #dataset sizes
+for ds in 25 50 #dataset sizes
 do
     for d in 10 50 100 250 500 750 1000  #dimensions
     do
