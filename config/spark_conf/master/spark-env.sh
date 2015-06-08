@@ -5,13 +5,13 @@
 
 # Options read when launching programs locally with 
 # ./bin/run-example or ./bin/spark-submit
-#HADOOP_CONF_DIR=/opt/hadoop-1.2.1/conf # , to point Spark towards Hadoop configuration files
+# - HADOOP_CONF_DIR, to point Spark towards Hadoop configuration files
 # - SPARK_LOCAL_IP, to set the IP address Spark binds to on this node
 # - SPARK_PUBLIC_DNS, to set the public dns name of the driver program
 # - SPARK_CLASSPATH, default classpath entries to append
 
 # Options read by executors and drivers running inside the cluster
-SPARK_LOCAL_IP=192.168.5.142
+SPARK_LOCAL_IP=192.168.5.135
 # - SPARK_PUBLIC_DNS, to set the public DNS name of the driver program
 # - SPARK_CLASSPATH, default classpath entries to append
 # - SPARK_LOCAL_DIRS, storage directories to use on this node for shuffle and RDD data
@@ -29,12 +29,12 @@ SPARK_LOCAL_IP=192.168.5.142
 # - SPARK_YARN_DIST_ARCHIVES, Comma separated list of archives to be distributed with the job.
 
 # Options for the daemons used in the standalone deploy mode
-SPARK_MASTER_IP=192.168.5.142
+SPARK_MASTER_IP=192.168.5.135
 # - SPARK_MASTER_PORT / SPARK_MASTER_WEBUI_PORT, to use non-default ports for the master
 # - SPARK_MASTER_OPTS, to set config properties only for the master (e.g. "-Dx=y")
 # - SPARK_WORKER_CORES, to set the number of cores to use on this machine
-SPARK_WORKER_MEMORY=3000m #, to set how much total memory workers have to give executors (e.g. 1000m, 2g)
-#SPARK_WORKER_PORT=7080
+SPARK_WORKER_MEMORY=3000m
+# - SPARK_WORKER_PORT / SPARK_WORKER_WEBUI_PORT, to use non-default ports for the worker
 # - SPARK_WORKER_INSTANCES, to set the number of worker processes per node
 # - SPARK_WORKER_DIR, to set the working directory of worker processes
 # - SPARK_WORKER_OPTS, to set config properties only for the worker (e.g. "-Dx=y")

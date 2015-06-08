@@ -20,11 +20,12 @@ WORKER_METRICS=(bytes_in.rrd bytes_out.rrd mem_buffers.rrd mem_cached.rrd mem_fr
 
 DIM=$1  #get the dimensions as the first argument passed to the script
 CHUNKS=$2  #number of partitions for the input file of spark job
-RES_DIR="/opt/Spark_jobs/9vms_2cores_4GBram/ds5/dim${DIM}" #the directory of the jobs for 10.000 data points
+POINTS=$3 #number of points in the dataset
+RES_DIR="/opt/Spark_jobs/9vms_2cores_4GBram/ds${POINTS}/dim${DIM}" #the directory of the jobs for 10.000 data points
 SPARK_HOME="/opt/spark-1.2.0-bin-hadoop2.4"
 SPARK_SUBMIT="${SPARK_HOME}/bin/spark-submit"
 APP_DIR="${SPARK_HOME}/apps"
-HDFS_DIR="/kmeans/n5/d${DIM}/n5d${DIM}"
+HDFS_DIR="/kmeans/n${POINTS}/d${DIM}/n${POINTS}d${DIM}"
 
 SPARK_KMEANS="$APP_DIR/sparktest.py"
 
@@ -112,6 +113,15 @@ function gather_metrics {
     return
 }
 
+function clear_caches {
+	for cc in {1..8}
+	do
+		ssh worker${cc} "sync; echo 3 >/proc/sys/vm/drop_caches"
+	done
+	return
+}
+
+
 #for every dataset with different centroid run spark-submit with the appropriate command line arguments
 #for every possible number of iterations
 COUNTER=0
@@ -121,12 +131,14 @@ do
 	for v in 0 #1
 	do
 	    #loop over the different clusters
-	    for c in 10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600
+	    for c in 100 500 1000 #10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600
 	    do
             JOB_DIR="${RES_DIR}/clus${c}/iter${i}"  #keep the directory of the current job in a variable
             echo -e "\t\tSTART OF SCRIPT OUTPUT No$((COUNTER++))" >$APP_DIR/script_output
             makefiles
             makedirs
+	    echo "[+] Clearing caches in all nodes..." >>$APP_DIR/script_output
+	    #clear_caches
             echo "[+] Created the files and directories for the job" >>$APP_DIR/script_output
 	    [ -e "$JOB_DIR/master/master_iostat_unformatted" ] || touch $JOB_DIR/master/master_iostat_unformatted  #the file with the iostat statistics for the master node only
 	    echo "[+] Created the master_iostat_unformatted file" >>$APP_DIR/script_output
@@ -139,7 +151,7 @@ do
 	    echo "[+] Sleeping for 30 secs..." >>$APP_DIR/script_output
 	    GANGLIA_EVENT_START=`date +%s` #event start timestamp
 	    sleep 30 # give some time to iostat to collect the first metrics
-	    JOB_NAME="Spark_n5_d${DIM}_c${c}_i${i}"  # the name of the job about to run
+	    JOB_NAME="Spark_n${POINTS}_d${DIM}_c${c}_i${i}"  # the name of the job about to run
 	    #JOB_NAME="full_run_test"
 	    echo "[+] Submitting job to spark..." >>$APP_DIR/script_output
 	        

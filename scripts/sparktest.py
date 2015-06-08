@@ -20,9 +20,10 @@ if __name__ == '__main__':
     kmeansModel = KMeans.train(parsedData,int(sys.argv[4]),maxIterations=int(sys.argv[3]),initializationMode="random")
     #print(kmeansModel.centers)
     #parsedData.unpersist()
-    print
-    for i in kmeansModel.clusterCenters:
-        for j in i:
-            print j,
-        print
+    print "ok"
+
+    #for i in kmeansModel.clusterCenters:
+    #    for j in i:
+    #        print j,
+    #    print
     sc.stop()
