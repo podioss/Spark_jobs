@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/opt/spark-1.2.0-bin-hadoop2.4/apps/sparktest.py", line 20, in <module>
+    kmeansModel = KMeans.train(parsedData,int(sys.argv[4]),maxIterations=int(sys.argv[3]),initializationMode="random")
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/pyspark/mllib/clustering.py", line 84, in train
+    runs, initializationMode)
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/pyspark/mllib/common.py", line 122, in callMLlibFunc
+    return callJavaFunc(sc, api, *args)
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/pyspark/mllib/common.py", line 115, in callJavaFunc
+    return _java2py(sc, func(*args))
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/lib/py4j-0.8.2.1-src.zip/py4j/java_gateway.py", line 538, in __call__
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/lib/py4j-0.8.2.1-src.zip/py4j/protocol.py", line 300, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o38.trainKMeansModel.
+: org.apache.spark.SparkException: Job 4 cancelled because Stage 6 was cancelled
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1214)
+	at org.apache.spark.scheduler.DAGScheduler.handleJobCancellation(DAGScheduler.scala:1184)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply$mcVI$sp(DAGScheduler.scala:1172)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply(DAGScheduler.scala:1171)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply(DAGScheduler.scala:1171)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofInt.foreach(ArrayOps.scala:156)
+	at org.apache.spark.scheduler.DAGScheduler.handleStageCancellation(DAGScheduler.scala:1171)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessActor$$anonfun$receive$2.applyOrElse(DAGScheduler.scala:1393)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessActor.aroundReceive(DAGScheduler.scala:1375)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
