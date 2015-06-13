@@ -2,15 +2,16 @@
 from __future__ import print_function
 import sys
 import math
-if len(sys.argv)!=3:
-	sys.stderr.write("Usage: ./memparser.py inFile outFile\n")
+if len(sys.argv)!=4:
+	sys.stderr.write("Usage: ./memparser.py <inFile> <outFile> <total_mem>\n")
 	raise SystemExit(1)
 	
 ifd=open(sys.argv[1],"r") #input file
 ofd=open(sys.argv[2],"w") #output file
 
+
 #4047552  8176312  16433520
-mem_total=4047552  #total memory of the nodes in kb(=4GB)
+mem_total=int(sys.argv[3])  #total memory of the nodes in kb(=4GB)
 mem_used_acc=0
 counter=0
 for line in ifd.readlines():

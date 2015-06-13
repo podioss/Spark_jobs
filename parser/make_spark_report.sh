@@ -19,8 +19,12 @@ function parse_memory {
         head -n -2 $BASE_DIR/$w/mem_buffers_tmp | tail -n +3 > $BASE_DIR/$w/mem_buffers_tmp1
         #create mem_all file in every folder 
         paste -d"," $BASE_DIR/$w/mem_free_tmp1 $BASE_DIR/$w/mem_cached_tmp1 $BASE_DIR/$w/mem_buffers_tmp1 > $BASE_DIR/$w/mem_all
-        #parse with memparser.py
-        $MEMPARSER $BASE_DIR/$w/mem_all $BASE_DIR/$w/average_mem_used
+        #parse with memparser.py depending on the node's total memory
+	if [ $w == 'master' ]; then
+        	$MEMPARSER $BASE_DIR/$w/mem_all $BASE_DIR/$w/average_mem_used $MASTER_MEM
+	else
+        	$MEMPARSER $BASE_DIR/$w/mem_all $BASE_DIR/$w/average_mem_used $WORKER_MEM
+	fi
         #remove everything tmp created
         rm -f $BASE_DIR/$w/{mem_cached1,mem_free1,mem_buffers1}
         rm -f $BASE_DIR/$w/{mem_buffers_tmp,mem_cached_tmp,mem_free_tmp}
@@ -80,24 +84,24 @@ function parse_net {
     return
 }
 
-
+WORKER_MEM=4047552
+MASTER_MEM=8176312
 METRICSPARSER="./metricsparser.py"
 MEMPARSER="./memparser.py"
 for ds in 5 #dataset sizes
 do
-    for d in 10000 #10 50 100 250 500 750 1000  #dimensions
+    for d in 1000 #10 50 100 250 500 750 1000  #dimensions
     do
-        for c in 100 #10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600 #clusters
+        for c in 750 #10 100 200 300 400 500 600 700 800 900 1000 1200 1400 1600 #clusters
         do
             for i in 10 #iterations
             do
                 BASE_DIR="/opt/Spark_jobs/9vms_2cores_4GBram/ds${ds}/dim${d}/clus${c}/iter${i}"
-                PARSED="$BASE_DIR/parsed"
+		PARSED="$BASE_DIR/parsed"
                 MODEL_DATA="$BASE_DIR/model_data"
                 mkdir -p $MODEL_DATA
                 mkdir -p $PARSED
                 parse_memory
-                
                 tail -1 $BASE_DIR/time > $PARSED/time
                 parse_diskio
                 #parse_net
