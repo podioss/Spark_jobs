@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/opt/spark-1.2.0-bin-hadoop2.4/apps/sparktest.py", line 20, in <module>
+    kmeansModel = KMeans.train(parsedData,int(sys.argv[4]),maxIterations=int(sys.argv[3]),initializationMode="random")
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/pyspark/mllib/clustering.py", line 84, in train
+    runs, initializationMode)
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/pyspark/mllib/common.py", line 122, in callMLlibFunc
+    return callJavaFunc(sc, api, *args)
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/pyspark/mllib/common.py", line 115, in callJavaFunc
+    return _java2py(sc, func(*args))
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/lib/py4j-0.8.2.1-src.zip/py4j/java_gateway.py", line 538, in __call__
+  File "/opt/spark-1.2.0-bin-hadoop2.4/python/lib/py4j-0.8.2.1-src.zip/py4j/protocol.py", line 300, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o38.trainKMeansModel.
+: java.util.concurrent.TimeoutException: Futures timed out after [30 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:219)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:107)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:107)
+	at org.apache.spark.storage.BlockManagerMaster.removeRdd(BlockManagerMaster.scala:111)
+	at org.apache.spark.SparkContext.unpersistRDD(SparkContext.scala:1121)
+	at org.apache.spark.rdd.RDD.unpersist(RDD.scala:169)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:133)
+	at org.apache.spark.mllib.api.python.PythonMLLibAPI.trainKMeansModel(PythonMLLibAPI.scala:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:231)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:379)
+	at py4j.Gateway.invoke(Gateway.java:259)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:133)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:207)
+	at java.lang.Thread.run(Thread.java:745)
+
